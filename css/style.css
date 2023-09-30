@@ -19,43 +19,49 @@
     padding: 1rem;
 }
 
-/* header */ 
+/* HEADER */ 
 .site_header{
     width: 100%;
     height: 80px;
 }
 
 .header_logo{
-    width: 20%;
+    width: 15%;
 }
 
 .row_menu_bar{
-    justify-content: space-between;
     display: flex;
-    margin: auto;
-    width: 70%;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 1rem;
+    align-self: center;
 }
 
 .header_login{
     width: 10%;
 }
+/* -------------------- IN FASE DI RESTRINGIMENTO PAGINA IL CONTENITORE DEL LOGIN COPRE IL MENU BAR ----------------------------- */
 
-#log_button{
-    border: none;
-    padding: 1rem;
-    font: inherit;
+
+/* MAIN */
+
+/* Download Discord or Open in browser */
+.download_open_bg{
+    width: 100%;
+    display: flex;
 }
 
 
-
-/*Debug*/
+/* --- DEBUG --- */
 .debug .site_header{
     background-color: red;
+    border: 0.3rem dashed green;
 }
 
 .debug .site_header .flex_container{
     height: 100%;
     background: #ededed;
+    border: 0.3rem dotted black;
 }
 
 .debug .header_logo{
@@ -66,7 +72,6 @@
 .debug .row_menu_bar{
     background: black;
     height: 3rem;
-    width: 70rem;
 }
 
 .debug .col-5{
@@ -76,4 +81,18 @@
 
 .debug .header_login{
     background-color: yellow;
+    height: 40px;
 }
+
+.debug .download_open_bg{
+    height: 40rem;
+    background: rgb(24, 97, 107);
+    border: 0.3rem double yellow;
+}
+
+.debug main .download_open_bg .flex_container{
+    background-color: red;
+    height: 20rem;
+    border: 0.3rem dotted black;
+}
+/* ---/.DEBUG--- */
