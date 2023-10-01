@@ -6,16 +6,11 @@
 }
 
 /* container flex */
-.flex_container{
-    width: 80%;
-    margin: auto;
-}
-
-.section_bg, .image_content, .text_content, .download_open_bg, .row_menu_bar, .flex_container, .header_login, .header_logo{
+.site_header, .flex_container_header, .section_bg, .image_content, .text_content, .download_open_bg, .row_menu_bar, .flex_container, .header_login, .header_logo, .footer_top, .footer_bottom, .footer_nav, .logo_footer, .sign_in_footer{
     display: flex;
     margin: auto;
+    width: 80%;
 }
-
 
 /* column */
 .col-5{
@@ -23,10 +18,19 @@
     padding: 1rem;
 }
 
+.col-4{
+    width: calc((100% / 12) *4);
+}
+
 /* HEADER */ 
 .site_header{
     width: 100%;
     height: 80px;
+}
+
+.flex_container_header{
+    width: 80%;
+    margin: auto;
 }
 
 .header_logo{
@@ -43,15 +47,9 @@
 .header_login{
     width: 10%;
 }
-/* -------------------- IN FASE DI RESTRINGIMENTO PAGINA IL CONTENITORE DEL LOGIN COPRE IL MENU BAR ----------------------------- */
-
 
 /* MAIN */
-.download_open_bg{
-    width: 100%;
-}
-
-.section_bg{
+.download_open_bg, .section_bg{
     width: 100%;
 }
 
@@ -63,14 +61,31 @@
     width: 40%;
 }
 
+/* FOOTER */
+footer .footer_top .flex_container{
+    width: 35%;
+}
 
-/* --- DEBUG --- */
+.footer_top{
+    border-bottom: 0.1rem blue solid;
+}
+
+.logo_footer{
+    margin-left: 0;
+}
+
+.sign_in_footer{
+    margin-right: 0;
+}
+
+
+/* DEBUG */
 .debug .site_header{
     background-color: red;
     border: 0.3rem dashed green;
 }
 
-.debug .site_header .flex_container{
+.debug .site_header .flex_container_header{
     height: 100%;
     background: #ededed;
     border: 0.3rem dotted black;
@@ -78,7 +93,7 @@
 
 .debug .header_logo{
     background: yellow;
-    height: 40px;
+    height: 3rem;
 }
 
 .debug .row_menu_bar{
@@ -93,11 +108,11 @@
 
 .debug .header_login{
     background-color: yellow;
-    height: 40px;
+    height: 3rem;
 }
 
 .debug .download_open_bg{
-    height: 40rem;
+    height: 30rem;
     background: rgb(24, 97, 107);
     border: 0.3rem double yellow;
 }
@@ -130,4 +145,47 @@
     height: 30rem;
     background: orange;
     border: 0.3rem solid black;
+}
+
+.debug footer{
+    background: #706e6e;
+}
+
+.debug footer .footer_top{
+    height: 20rem;
+    background: purple;
+}
+
+.debug footer .footer_top .flex_container{
+    height: 18rem;
+    background: yellow;
+    border: 0.3rem solid orange;
+}
+
+.debug footer .footer_top .footer_nav{
+    height: 18rem;
+    background: white;
+    border: 0.3rem solid black;
+}
+
+.debug footer .footer_top .footer_nav .col-4{
+    border: 0.1rem dotted blue;
+}
+
+.debug footer .footer_bottom{
+    height: 4rem;
+    background: green;
+    border: 0.1rem dotted white;
+}
+
+.debug footer .footer_bottom .logo_footer{
+    height: 2rem;
+    width: 5rem;    
+    background: #000000;
+}
+
+.debug footer .footer_bottom .sign_in_footer{
+    height: 2rem;
+    width: 5rem;    
+    background: #000000;
 }
