@@ -33,6 +33,10 @@
     height: 80px;
 }
 
+.container_header{
+    align-items: center;
+}
+
 .header_logo{
     width: 15%;
 }
@@ -49,9 +53,6 @@
 }
 
 /* MAIN */
-.download_open_bg, .section_bg{
-    width: 100%;
-}
 
 .image_content{
     width: 60%;
@@ -143,7 +144,7 @@
 }
 
 .debug .section_bg .flex_container{
-    height: 30rem;
+    height: 20rem;
     background: orange;
     border: 0.3rem solid black;
 }
